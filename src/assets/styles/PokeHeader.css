@@ -1,0 +1,24 @@
+.poke-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title__text {
+    color: #e84;
+    font-size: 4rem;
+}
+
+.searchbox {
+    padding: 0.7rem 1rem;
+    width: min(15rem, 100%);
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #2224;
+}
+
+.slider {
+    display: flex;
+    gap: 1rem;
+}
