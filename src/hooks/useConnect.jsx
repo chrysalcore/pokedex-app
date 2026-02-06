@@ -10,18 +10,18 @@ function useConnect() {
     useEffect(() => {
         let ignore = false
 
-        (async () => { 
-            const action = await load(url, search) 
-
+        
+        load(url, search)
+        .then(action => {
             if(!ignore) {
                 dispatch(action)
             }
-        })()
+        })
 
         return () => {
             ignore = true
         }
-    }, [url, search])
+    }, [url, search, dispatch])
 
     const handleNext = () => {
         if(data?.next) {
