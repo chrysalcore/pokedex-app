@@ -1,11 +1,11 @@
 # Pokedex Web App
 
-Template landing for show pokemons.
+Starter template to display Pokémon and filter them in a list.
 
 [![React](https://img.shields.io/badge/React_19.1.1-blue)](https://reactjs.org/)
 [![React Router DOM](https://img.shields.io/badge/Jest_DOM_6.9.1-darkred)](https://reactjs.org/)
-[![Axios](https://img.shields.io/badge/Axios_1.7.9-red)](https://developer.mozilla.org/es/docs/Web/JavaScript/)
-[![JavaScript](https://img.shields.io/badge/JavaScript-yellow)](https://developer.mozilla.org/es/docs/Web/JavaScript/)
+[![Axios](https://img.shields.io/badge/Axios_1.7.9-red)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![JavaScript](https://img.shields.io/badge/JavaScript-yellow)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Vite](https://img.shields.io/badge/Vite_7.1.2-yellow)](https://vitejs.dev/)
 [![Vite](https://img.shields.io/badge/Vitest_3.2.4-darkgreen)](https://vitejs.dev/)
 [![License](https://img.shields.io/badge/Polyform_Perimeter_License_1.0.0-red)](LICENSE)
@@ -14,43 +14,46 @@ Template landing for show pokemons.
 
 Live Link: [https://chrysalcore.github.io/pokedex/](https://chrysalcore.github.io/pokedex/)
 
+## Project status
+
+This project is under development and is not finished. Many core features are implemented (listing, filtering, main components and partial tests), but improvements, test coverage and visual refinements are still pending.
+
+If you run it locally, be aware that some routes or components may be incomplete or in a "mock" state.
+
 ## Description
 
-**Pokedex Web App** was created to show pokemons and filter them in a list.
+`Pokedex Web App` is an application created to display Pokémon, enable filtering, and demonstrate componentization and state patterns in React. The code uses React with contexts and reducers, external API consumption, and unit/integration tests in progress.
 
-The code was written using React, state management with contexts and reducers; calls were made to a third-party API to read the menu. It also adheres to best practices, responsiveness, accessibility, and other web standards.
+## Main features
 
-## Main Features
+- State management with `useReducer` and Context API.
+- REST API consumption to fetch Pokémon data.
+- Reusable components and testing for hooks and components.
+- Responsive UI using CSS for different devices.
+- Animations and smooth scrolling for improved UX.
 
-- Advanced state management with reducers.
-- API Consumption: Efficient connection with RESTful APIs for read operations.
-- Unit and integration testing, dummy components, hook testing.
-- Componentization with JavaScript.
-- Responsive UI/UX: Interface designed with CSS that adapts to all devices.
-- Cyclic animations, Smooth scrolling and a fluid user experience.
-
-## Technologies Used
+## Technologies used
 
 | Category | Technologies |
 | :--- | :--- |
 | Frontend & Language | React 19, JavaScript, Vite |
-| State Management | useState, useReducer |
+| State Management | useState, useReducer, Context API |
 | HTTP Client | Axios |
-| Routing | --- |
-| Testing | Jest |
+| Routing | No routing library included by default |
+| Testing | Vitest, Testing Library |
 | Style | CSS |
 | Tools | ESLint, Vitest |
 | Version Control | Git, GitHub |
-| Deployment | GitHub |
+| Deployment | GitHub Pages |
 
-## Local Installation and Use
+## Local installation and usage
 
-Follow these steps to run the project on your local machine.
+Follow these steps to run the project on your machine.
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/es/)
-- [NPM](https://www.npmjs.com)
+- `Node.js` (recommended 16+)
+- `npm` or `pnpm`
 
 ### Steps
 
@@ -67,18 +70,46 @@ Follow these steps to run the project on your local machine.
     npm install
     ```
 
-3. Run development mode
+3. Run in development mode
 
     ```bash
     npm run dev
     ```
 
+### Run tests
+
+If tests are configured in the project, you can run them with:
+
+```bash
+npm run test
+# or
+npm run vitest
+```
+
+## Roadmap (pending)
+
+- Complete test coverage for hooks and components.
+- Improve error handling and loading states.
+- Add pagination and performance optimizations.
+- Improve accessibility (a11y) and related tests.
+
+## How to contribute
+
+- Open an Issue to propose changes or report bugs.
+- Create a Pull Request with one branch per feature/bugfix.
+- Follow the existing code style and add tests when possible.
+
+## Known issues
+
+- Test coverage is incomplete for some hooks and components.
+- Some routes or data may be in "mock" mode until integration is complete.
+
 ## License
 
-This project is licensed under the [PolyForm Perimeter License 1.0.0](LICENSE)
+This project is licensed under the [PolyForm Perimeter License 1.0.0](LICENSE).
 
-### Key Restrictions
+### Key restrictions
 
-- Free use for **non-commercial projects**.
-- Use **prohibited** in businesses that compete with the owner.
-- **Contact the owner** for a commercial license.
+- Free for **non-commercial** projects.
+- **Prohibited** for use by businesses that compete with the owner.
+- Contact the owner for commercial licenses.
